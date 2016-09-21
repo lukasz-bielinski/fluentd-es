@@ -3,7 +3,7 @@ FROM oberthur/docker-ubuntu:16.04
 
 
 
-RUN ulimit -n 65536
+#RUN ulimit -n 65536
 RUN echo "nameserver 8.8.8.8" >> /etc/resolv.conf
 
 RUN locale-gen en_US.UTF-8
