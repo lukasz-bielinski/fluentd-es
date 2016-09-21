@@ -19,7 +19,7 @@ RUN echo 'APT::Install-Recommends "0"; \n\
           APT::Install-Suggests "0";' > /etc/apt/apt.conf \ && apt-get update
 
 
-RUN apt-get install -y -q --no-install-recommends \
+RUN apt-get install -y -q --no-install-recommends 
 RUN   curl ca-certificates make g++ sudo bash
 
  # Install Fluentd.
